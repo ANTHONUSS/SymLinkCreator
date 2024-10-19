@@ -1,14 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="Application.AppController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #26282e;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.AppController">
+   <children>
+      <HBox alignment="CENTER" layoutX="22.0" layoutY="67.0" prefHeight="100.0" prefWidth="559.0">
+         <children>
+            <MFXButton onAction="#sourcePath" prefHeight="50.0" prefWidth="50.0" stylesheets="@CSS/FileButton.css" text=" ">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/folder.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="6.0" />
+               </padding>
+            </MFXButton>
+            <MFXTextField fx:id="sourceLabel" floatingText="Source" prefHeight="35.0" prefWidth="200.0" stylesheets="@CSS/TextField.css">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </MFXTextField>
+            <MFXTextField fx:id="linkLabel" floatingText="Link" prefHeight="35.0" prefWidth="200.0" stylesheets="@CSS/TextField.css">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </MFXTextField>
+            <MFXButton onAction="#linkPath" prefHeight="50.0" prefWidth="50.0" stylesheets="@CSS/FileButton.css" text=" ">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/folder.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="6.0" />
+               </padding>
+            </MFXButton>
+         </children>
+      </HBox>
+      <MFXButton layoutX="233.0" layoutY="200.0" onAction="#createSymLink" prefHeight="55.0" prefWidth="135.0" stylesheets="@CSS/Button.css" text="Create Symlink" />
+      <MFXTextField fx:id="infoLabel" editable="false" layoutX="32.0" layoutY="291.0" prefHeight="49.0" prefWidth="539.0" stylesheets="@CSS/TextField.css" visible="false" />
+   </children>
 </AnchorPane>

@@ -1,0 +1,22 @@
+@import "Colors.css";
+
+.mfx-button {
+    -fx-background-color: -SecondaryBG;
+    -fx-text-fill: white;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-border-color: -MainAccent;
+}
+
+.mfx-button:armed,
+.mfx-button:hover,
+.mfx-button:focused,
+.mfx-button {
+    -fx-background-color: -SecondaryBG;
+    -fx-text-fill: white;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-border-color: -MainAccent;
+}
