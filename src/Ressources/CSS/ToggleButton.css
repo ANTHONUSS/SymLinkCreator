@@ -1,0 +1,6 @@
+@import "Colors.css";
+
+.mfx-toggle-button {
+    -mfx-main: -SecondaryAccent;
+    -mfx-secondary: -SecondaryBG;
+}
