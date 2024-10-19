@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>G:\Mon Drive\Programmation\Java\SymLinkCreator\out\artifacts\SymLinkCreator_jar\SymLinkCreator.jar</jar>
+  <outfile>G:\Mon Drive\Application\Perso\SymLinkCreator\SymLinkCreator.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl></downloadUrl>
+  <supportUrl></supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <manifest>G:\Mon Drive\Programmation\Java\SymLinkCreator\manifest.manifest</manifest>
+  <icon>G:\Mon Drive\Programmation\Java\SymLinkCreator\link_dia_icon.ico</icon>
+  <jre>
+    <path>jdk-23.0.1-full</path>
+    <requiresJdk>true</requiresJdk>
+    <requires64Bit>false</requires64Bit>
+    <minVersion>23.0.1</minVersion>
+    <maxVersion></maxVersion>
+  </jre>
+</launch4jConfig>
