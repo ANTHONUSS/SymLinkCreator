@@ -12,7 +12,7 @@
    <children>
       <HBox alignment="CENTER" layoutX="22.0" layoutY="67.0" prefHeight="100.0" prefWidth="559.0">
          <children>
-            <MFXButton onAction="#sourcePath" prefHeight="50.0" prefWidth="50.0" stylesheets="@CSS/FileButton.css" text=" ">
+            <MFXButton fx:id="sourceButton" onAction="#sourcePath" prefHeight="50.0" prefWidth="50.0" stylesheets="@CSS/FileButton.css" text=" ">
                <HBox.margin>
                   <Insets left="5.0" right="5.0" />
                </HBox.margin>
@@ -37,7 +37,7 @@
                   <Insets left="5.0" right="5.0" />
                </HBox.margin>
             </MFXTextField>
-            <MFXButton onAction="#linkPath" prefHeight="50.0" prefWidth="50.0" stylesheets="@CSS/FileButton.css" text=" ">
+            <MFXButton fx:id="linkButton" onAction="#linkPath" prefHeight="50.0" prefWidth="50.0" stylesheets="@CSS/FileButton.css" text=" ">
                <HBox.margin>
                   <Insets left="5.0" right="5.0" />
                </HBox.margin>
@@ -54,7 +54,7 @@
             </MFXButton>
          </children>
       </HBox>
-      <MFXButton layoutX="233.0" layoutY="200.0" onAction="#createSymLink" prefHeight="55.0" prefWidth="135.0" stylesheets="@CSS/Button.css" text="Create Symlink" />
+      <MFXButton fx:id="symlinkButton" layoutX="233.0" layoutY="200.0" onAction="#createSymLink" prefHeight="55.0" prefWidth="135.0" stylesheets="@CSS/Button.css" text="Create Symlink" />
       <MFXTextField fx:id="infoLabel" editable="false" layoutX="32.0" layoutY="291.0" prefHeight="49.0" prefWidth="539.0" stylesheets="@CSS/TextField.css" visible="false" />
    </children>
 </AnchorPane>
